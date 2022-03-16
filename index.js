@@ -44,7 +44,7 @@ const questions = [
   },
   {
     type: 'list',
-    name: 'license'
+    name: 'license',
     message: 'What kind of license should your project have?',
     choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
   },
@@ -65,10 +65,10 @@ const questions = [
 // function to initialize program
 function init() {
   inquirer.prompt(questions)
-  .then(responses)=> {
+  .then(responses => {
     //the path.join will place the readme file in the current directory and name it accordingly
-    fs.writeFileSync( path.join(process.cwd(), 'README.md'), generateMarkdown(responses), err=>console.log(err))
-  }
+    fs.writeFileSync( path.join(process.cwd(), 'README.md'), generateMarkdown({responses}), err=>console.log(err))
+  })
 }
 
 // function call to initialize program
