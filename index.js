@@ -61,13 +61,14 @@ const questions = [
   }
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
 
 // function to initialize program
 function init() {
-
+  inquirer.prompt(questions)
+  .then(responses)=> {
+    //the path.join will place the readme file in the current directory and name it accordingly
+    fs.writeFileSync( path.join(process.cwd(), 'README.md'), generateMarkdown(responses), err=>console.log(err))
+  }
 }
 
 // function call to initialize program
