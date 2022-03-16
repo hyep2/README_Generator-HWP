@@ -1,9 +1,9 @@
-# d ![Github License](https://img.shields.io/badge/license-MIT-green.svg)
+# README GENERATOR ![Github License](https://img.shields.io/badge/license-GPL 3.0-green.svg)
 
 
 ## Description
 
-fa
+generate readmes
 
 ## Table of Contents
 * [Installation](#installation)
@@ -17,30 +17,30 @@ fa
 To install necessary dependencies, run the following commands: 
 
 ```
-f
+kdfj
 ```
 
 ## Usage
 
-adf
+kdfj
 
 ## License
 
-This project is licensed under the terms of the MIT.
+This project is licensed under the terms of the GPL 3.0.
 
 ## Contributing
 
-adf
+yeah
 
 ## Tests
 
 To run tests, run the following command:
 
 ```
-npm test
+node index.js
 ```
 
 ## Questions
 
-If you have any questions about the repo, contact me directly at ldjfa.
-You can find more of my other projects at [fd]. (https://github.com/fd/).
+If you have any questions about the repo, contact me directly at hyewonpark@gmail.com.
+You can find more of my other projects at [hyep2]. (https://github.com/hyep2/).
