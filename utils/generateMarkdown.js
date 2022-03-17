@@ -1,6 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title} ${renderBadge(data.license)}
+  return `# ${renderBadge(data.license)}
+  
+# ${data.title} 
 
 
 ## Description
@@ -54,7 +56,7 @@ function renderBadge(license) {
   }
   //if user selects license, will display badge
   else {
-    return `![Github License](https://img.shields.io/badge/license-${license}-green.svg)`
+    return `![Github License](https://img.shields.io/badge/license-${license}-blue.svg)`
   }
 }
 

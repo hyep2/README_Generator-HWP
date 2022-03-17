@@ -19,7 +19,7 @@ const questions = [
   {
     type: 'input',
     name: 'title',
-    message: 'What is the name of your project?',
+    message: 'What is the title of your project?',
   },
   {
     type: 'input',
@@ -45,13 +45,13 @@ const questions = [
   {
     type: 'list',
     name: 'license',
-    message: 'What kind of license should your project have?',
-    choices: ['MIT', 'APACHE-2.0', 'GPL-3.0', 'BSD-3', 'EPL-2.0', 'ISC', 'ECL-2.0', 'MPL-2.0', 'None'],
+    message: 'What is the license for your project?',
+    choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
   },
   {
     type: 'input',
     name: 'contributing',
-    message: 'What does the user need to know about contributing to the repo?',
+    message: 'What are the contributing guidelines for your project?',
   },
   {
     type: 'input',
@@ -69,6 +69,7 @@ function init() {
     //the path.join will place the readme file in the current directory and name it accordingly
     fs.writeFileSync( path.join(process.cwd(), 'README.md'), generateMarkdown({...responses}), err=>console.log(err))
   })
+  .catch(err=>console.log(err))
 }
 
 // function call to initialize program
