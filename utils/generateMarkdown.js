@@ -4,7 +4,6 @@ function generateMarkdown(data) {
   
 # ${data.title} 
 
-
 ## Description
 
 ${data.description}
