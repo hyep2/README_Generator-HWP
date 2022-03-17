@@ -58,6 +58,7 @@ function renderBadge(license) {
   }
 }
 
+//render license information if user selects a license
 function renderLicenseInfo(license) {
   if(license==='None') {
     return;
