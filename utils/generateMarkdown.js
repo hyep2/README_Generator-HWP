@@ -45,6 +45,9 @@ ${data.test}
 
 If you have any questions about the repo, contact me directly at ${data.email}.
 You can find more of my other projects at [${data.github}]. (https://github.com/${data.github}/).
+
+## Display of Project
+![alt text](${data.image})
 `;
 }
 

@@ -34,13 +34,13 @@ const questions = [
   {
     type: 'input',
     name: 'installation',
-    message: 'What command should be run to install dependencies?',
+    message: 'What are the installation instructions for your project?',
     default: 'npm i',
   },
   {
     type: 'input',
     name: 'usage',
-    message: 'Provide short instructions or examples so user can use the project.',
+    message: 'What are the usage instructions for your project?',
   },
   {
     type: 'list',
@@ -57,8 +57,14 @@ const questions = [
     type: 'input',
     name: 'test',
     message: 'What command should be run to run tests?',
-    default: 'npm test',
-  }
+    default: 'npm run test',
+  },
+  {
+    type: 'input',
+    name: 'image',
+    message: 'What is the link to the image/picture of your project?',
+    default: 'pic.png'
+  },
 ];
 
 
